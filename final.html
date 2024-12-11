@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mó kǎ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mó kǎ</h1>
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__titulo">Mó kǎ</h2>
+            </div>
+            <button class=" menu-toggle" id="menu-togle">&#9776; Menu</button>
+            <ul class="nav__link">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">INICIO</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">SOBRE NOSOTROS</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">CURSOS</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">CONTACTO</a>
+                </li> 
+            </ul>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2 class="texto-centro texto-2">Bienvenidos</h2>
+            <p class="texto-centro texto-grande">Cafe de especialidad y más</p>
+            <div class="contenedor-img">
+                <img src="https://i.pinimg.com/564x/38/25/0e/38250e1d24fb3813c0c0a85e766135c3.jpg" alt="Imagen de café" class="img">
+            </div>
+        </section>
+
+        <section id="sobre-nosotros">
+            <h2>Sobre nosotros</h2>
+            <div class="contenedor">
+                <div class="contenedor-img-3">
+                    <img src="https://i.pinimg.com/736x/34/d9/e8/34d9e86d694ea6fabf68e015469c8b7f.jpg" alt="Imagen de la cafetería" class="img-3">
+                </div>
+                <p class="txt-1">Somos una cafetería de especialidad que nació de la creación de dos estudiantes que buscaban un lugar tranquilo en donde poder estudiar y disfrutar de la comida y bebidas de todo tipo.</p>
+            </div>
+        </section>
+
+        <section id="Cursos">
+            <h2>Curso Barista | Inicial</h2>
+            <p>Si quieres aprender a preparar café de especialidad en casa, Mó kǎ es tu lugar. Este curso es ideal si no tienes conocimientos previos.</p>
+            <p>Este curso consta de 2 clases de 3 horas cada una, de 20:30hs a 23:30hs. Para información sobre precios, envía un mensaje y te responderemos a la brevedad.</p>
+            <form action="Horarios" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" placeholder="Ingrese su Nombre" name="name" id="name"> <br>
+                <label for="mail">Correo electrónico:</label>
+                <input type="text" placeholder="Ingrese su correo" name="mail" id="mail">
+                <br>
+                <label for="msg">Mensaje:</label>
+                <textarea name="user_message" id="msg">Hola! Quiero saber precios.</textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="Cursos">
+                <h2>Curso Barista | Laboral</h2>
+                <p>Curso orientado a personas que ya poseen conocimiento en el rubro de cafetería.</p>
+                <form>
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" placeholder="Ingrese su Nombre" name="Nombre" id="Nombre">
+                    <br>
+                    <label for="Apellido">Apellido:</label>
+                    <input type="text" placeholder="Ingrese su Apellido" name="Apellido" id="Apellido">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <br>
+                    <label for="grupo">Grupo:</label>
+                    <select name="grupo" id="grupo">
+                        <option value="1">Lunes, miércoles y viernes- 18hs a 21hs.</option>
+                        <option value="2">Martes, jueves y sábado- 18hs a 21hs.</option>
+                    </select>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <p class="testimonial-text">"Este es un excelente servicio, lo recomiendo totalmente!"</p>
+                    <p class="testimonial-author">- Micaela</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"Me encantó la experiencia, todo fue perfecto."</p>
+                    <p class="testimonial-author">- María</p>
+                </div>
+                <div class="testimonial-slide">
+                    <p class="testimonial-text">"Sin duda volveré a utilizar este servicio. Muy rico."</p>
+                    <p class="testimonial-author">- Ramiro</p>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <img src="https://ruffocoffee.com/wp-content/uploads/2024/08/Ruffo-_Placa-1-Barista.jpg" alt="Imagen 1">
+                <h3>Curso Barista Inicial <br>e-book</h3>
+                <p>Aprende a hacer café de especialidad en casa.</p>
+                
+                <button>
+                  <span class="span-mother">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>r</span>
+                  </span>
+                  <span class="span-mother2">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>r</span>
+                  </span>
+                </button>
+                
+
+
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzgXelvAuUa720qvl0OI5S81005oimITsy4g&s" alt="Imagen 2">
+                <h3>Curso Barista | Laboral 
+                <br> e-book </h3>
+                <p>Para aquellos que buscan mejorar sus habilidades.</p>
+                
+                <button>
+                  <span class="span-mother">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>r</span>
+                  </span>
+                  <span class="span-mother2">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>r</span>
+                  </span>
+                </button>
+                
+
+
+            </div>
+            <div class="card">
+                <img src="https://www.cursosbaristacafe.com.mx/storage/2013/09/herramientas-basicas-para-hacer-arte-latte.jpg" alt="Imagen 3">
+                <h3>Cursos Especiales <br> e-book</h3>
+                <p>Aprende sobre el arte en el cafe.</p>
+        
+                <button>
+                  <span class="span-mother">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>r</span>
+                  </span>
+                  <span class="span-mother2">
+                    <span>C</span>
+                    <span>o</span>
+                    <span>m</span>
+                    <span>p</span>
+                    <span>r</span>
+                    <span>a</span>
+                    <span>r</span>
+                  </span>
+                </button>
+                
+
+            </div>
+        </section>
+        
+
+
+        <section id="Contacto">
+            <h2>Contacto</h2>
+            <p>Si quieres disfrutar de un buen café y delicias, puedes encontrarnos en Avenida Libertad, entre Constitución y Palacios.</p>
+            <p>¿Quieres trabajar con nosotros? Envíanos tu curriculum a mokacafe@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Ruleri Agustina</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
